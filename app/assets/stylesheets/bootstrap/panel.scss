@@ -1,0 +1,130 @@
+.panel.panel-default {
+
+    h1 {
+        margin-bottom: 50px;
+        font-weight: 300;
+    }
+
+    h2 {
+
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        span {
+            font-size: 13px;
+            font-weight: 400;
+            margin-left: 5px;
+        }
+
+    }
+
+    h3 {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    >.thumbnail {
+        border-radius: 0;
+        border: 0;
+        margin-bottom: 0;
+    }
+
+    .panel-footer {
+
+        background-color: white;
+
+        .btn {
+            padding: 15px 35px;
+        }
+
+    }
+
+}
+
+
+// handling of label-value pairs
+
+.panel-label-value-pair {
+
+    margin-top: 10px;
+
+    span {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    strong {
+
+        display: block;
+        font-weight: 300;
+        font-size: 16px;
+        margin-bottom: 10px;
+
+        &.emphasis {
+            font-size: 18px;
+            color: black;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        &.emphasis+strong {
+            display: inline-block;
+        }
+
+    }
+
+}
+
+.panel-label-value-pair {
+
+    // span {  }
+
+    // strong {
+
+    //   font-size: 16px;
+    //   margin-bottom: 10px;
+    //   clear: right;
+
+
+    // }
+
+}
+
+.panel-label-value-pair.panel-label-value-pair-md {
+
+    span {
+        font-size: 14px;
+    }
+
+    strong {
+
+        font-size: 24px;
+        margin-bottom: 15px;
+
+        &.bold {
+            font-size: 32px;
+        }
+
+    }
+
+}
+
+.panel-label-value-pair.panel-label-value-pair-lg {
+
+    span {
+        font-size: 18px;
+    }
+
+    strong {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+}

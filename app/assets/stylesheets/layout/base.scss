@@ -1,0 +1,9 @@
+html,
+body {
+    height: 100%;
+}
+
+body>.container-fluid,
+body>.container-fluid>.row {
+    height: 100%;
+}

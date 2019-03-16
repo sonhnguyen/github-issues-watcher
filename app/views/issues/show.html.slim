@@ -1,0 +1,12 @@
+.modal-dialog
+  .modal-content
+
+    .modal-header
+      h2 Issue
+      button.close type='button' data-dismiss='modal' &times;
+    .modal-body
+
+      .row
+        .col-md-6 = @issue.title
+      .row
+        .col-md-12 = @issue.description

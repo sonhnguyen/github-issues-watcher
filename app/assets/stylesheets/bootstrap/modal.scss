@@ -1,0 +1,69 @@
+body .modal {
+
+    .modal-content {
+
+        border-radius: 2px;
+
+        >.alert {
+            position: relative;
+            margin: 0 50px 15px;
+            left: 0;
+        }
+
+    }
+
+    .modal-header button.close {
+        font-size: 35px
+    }
+
+    .modal-header,
+    .modal-body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .modal-header {
+
+        border: 0;
+        padding-bottom: 0;
+        margin-bottom: 15px;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 300;
+            margin-top: 30px;
+        }
+
+        button.close {
+            position: absolute;
+            top: 40px;
+            right: 45px;
+        }
+
+    }
+
+    .modal-body {
+
+        padding-top: 0;
+        font-weight: 300;
+
+        h2 {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+    }
+
+    .modal-footer {
+
+        padding: 30px 50px;
+
+        .btn {
+            padding: 15px 35px;
+        }
+
+    }
+
+}

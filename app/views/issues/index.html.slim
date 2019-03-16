@@ -1,0 +1,37 @@
+.page-header
+  h1 Github Issues
+
+.panel.panel-default
+  .panel-body
+    = simple_form_for @form, url: issues_path, method: :get do |f|
+      .row
+        .col-md-2 = f.input :status, collection: @form.options_for_status, include_blank: 'All'
+      .row
+        .col-md-3
+          .form-group
+            label.control-label &nbsp;
+            = f.submit 'Search', class: 'btn btn-primary btn-block'
+
+.panel.panel-default
+
+  table.table.table-stacked
+
+    thead
+      tr
+        th ID
+        th Title
+        th Description
+        th Status
+        th Author
+        th Opened at
+
+    tbody
+
+      - @form.results.each do |result|
+        tr
+        	td = result.issue_id
+        	td = link_to result.title, issue_path(result, anchor: 'modal'), 'data-toggle': 'modal', remote: true
+        	td = result.author
+        	td = result.description
+        	td = result.status
+        	td = result.opened_at
